@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    transition: 0.5s ease;
+}
+
+body,
+input {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#top-right-bg {
+    display: none;
+}
+
+section {
+    width: 100%;
+}
+
+section .top {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+
+section .top img {
+    width: 80%;
+}
+
+section .top p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 4rem 2rem;
+}
+
+section .bottom {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+section .bottom .right {
+    width: 100%;
+}
+
+section .bottom .right h2 {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+section .bottom .right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+section .bottom .right li {
+    font-size: 1.2rem;
+}
+
+section .bottom .left {
+    width: 100%;
+}
+
+section .bottom .left img {
+    width: 100%;
+}
+
+.down {
+    margin: 2rem;
+}
+
+.down h2 {
+    margin: 1rem 0;
+}
+
+.down p {
+    text-align: justify;
+}
+
+.down p i {
+    font-weight: 500;
+}
+
+@media screen and (max-width:850px) {
+    section .top, section .bottom {
+        grid-template-columns: 1fr;
+    }
+}

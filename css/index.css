@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    transition: 0.5s ease;
+}
+
+body,
+input {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+#hero .hero-first {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+#hero .hero-first img {
+    width: 100%;
+    animation: movein 1s forwards;
+    border-radius: 10px;
+}
+
+#hero .hero-last {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    color: #183666;
+}
+
+#hero .hero-last h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#hero .hero-last p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#hero .hero-last p b {
+    font-weight: 600;
+}
+
+#hero .hero-last .btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+#hero .hero-last .btn-group a {
+    background: #183666;
+    color: #fcfcfc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+#hero .hero-last .btn-group a:hover {
+    scale: 1.03;
+}
+
+#main {
+    width: 100%;
+    margin: 4rem 1rem;
+}
+
+#main h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.main .main-box {
+    display: flex;
+    width: 320px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.main .main-box:hover {
+    background: #333;
+    color: #fff;
+    scale: 1.1;
+}
+
+.main .main-box h3 {
+    font-weight: 500;
+}
+
+.main .main-box p {
+    text-align: justify;
+}
+
+.main .main-box svg {
+    width: 50px;
+}
+
+#testimonials {
+    margin: 2rem;
+}
+
+#testimonials h2 {
+    margin: 2rem 0;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.testimonials .testimonial {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    background: #f6f6f6;
+    border-radius: 10px;
+}
+
+.testimonials .testimonial:hover {
+    scale: 1.1;
+}
+
+.testimonials .testimonial h3 {
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+.testimonials .testimonial img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.testimonials .testimonial p {
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width:750px) {
+    #hero {
+        flex-direction: column-reverse;
+    }
+    #hero>div{
+        width: 100% !important;
+    }
+    .testimonials {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
+/* Key Frames */
+@keyframes movein {
+    0%{
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
